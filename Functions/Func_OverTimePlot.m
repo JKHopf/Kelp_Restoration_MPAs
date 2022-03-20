@@ -2,8 +2,7 @@ function [N, Nbio, Ybio, Rs] = Func_OverTimePlot(ND, tx, lincol, SpParas)
 
 subplot(5,1,1)
         hold on
-%         plot(tx, sum(ND(:,:),1), lincol,...
-%             'DisplayName' , "Yr = "+yrDist+", Lgth = "+rDist)
+%         plot(tx, sum(ND(:,:),1), lincol)
         plot(tx, sum(ND(:,:),1)./sum(ND(:,1),1),lincol)
         title('Total metapopulation')
         xlim([0,100])
